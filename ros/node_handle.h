@@ -573,7 +573,7 @@ private:
     l.level = byte;
     l.msg = (char*)msg;
     signed int r=publish(rosserial_msgs::TopicInfo::ID_LOG, &l);
-    assert(r>0);
+    assert(r>=0);
   }
 
 public:
